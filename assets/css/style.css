@@ -4,10 +4,10 @@
 
 ul {
     list-style: none;
+    padding: 20px 0 20px 0;
 }
 
 .menu {
-   text-align: center;
    display: inline-block;
 }
 
@@ -15,16 +15,19 @@ ul {
     display: inline-block;
     font-size: 20px;
     text-transform: uppercase;
-    padding: 20px;
-
+    padding: 0px;
+    text-align: center;
 }
 .menu-brand {
     display: inline-block;
     font-size: 25px;
     text-transform: uppercase;
-    padding: 20px;
-    text-align: left;
-   
+    text-align: center;
+    padding: 0;
+}
+
+.menu span {
+    margin: 6px;
 }
 /*-------------------------------- Colors----------------------------------- */
 
@@ -55,6 +58,15 @@ a:hover {
     background: black url(../images/Sofalasse.jpg);
     height: 100vh;
     background-position: top center;
-    background-position-y: -40vh;
+    background-position-y: -50vh;
     background-repeat: no-repeat;
+}
+
+
+/*----------------------------------- Media queries --------------------------------------- */
+
+@media screen and (max-width: 900px) {
+  .menu-item {
+    display: none;
+  }
 }
