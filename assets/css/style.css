@@ -29,6 +29,14 @@ ul {
 .menu span {
     margin: 6px;
 }
+
+/*------------------------------------ footer-------------------------------- */
+
+footer {
+    text-align: center;
+    background: black;
+    color: #fff;
+}
 /*-------------------------------- Colors----------------------------------- */
 
 .hvr-underline-reveal:before {
@@ -65,8 +73,15 @@ a:hover {
 
 /*----------------------------------- Media queries --------------------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen (max-width: 900px) {
   .menu-item {
+    display: none;
+  }
+}
+
+
+@media screen (min-width: 900px) {
+  .menu-mobile {
     display: none;
   }
 }
