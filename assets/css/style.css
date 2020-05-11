@@ -43,12 +43,22 @@ ul {
     height: 315px;
 }
 
+#photos {
+  clear:both;
+  line-height:0;
+  column-count:4;
+  column-gap:0;
+}
 /*------------------------------------ footer-------------------------------- */
 
 footer {
   text-align: center;
-  background: black;
+  background: #000000;
   color: #fff;
+}
+
+.social-media li{
+    display: inline-block;
 }
 /*-------------------------------- Colors----------------------------------- */
 
