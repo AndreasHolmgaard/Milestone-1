@@ -43,13 +43,20 @@ ul {
     height: 315px;
 }
 
-#photos {
-  clear:both;
-  line-height:0;
-  column-count:2;
-  column-gap:0;
-  max-width: 100%;
+.photos {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: (8, 0vw);
+  grid-gap:0;
 }
+
+.photos img {
+    width: 19.7vw;
+    height: 20vh;
+    object-fit: cover;
+}
+
+
 /*------------------------------------ footer-------------------------------- */
 
 footer {
@@ -110,9 +117,10 @@ a:visited {
 
 .contact-page {
   background: black url(../images/headphonelasse.jpg);
-  height: 100vh;
+  height: 80vh;
   max-width: 100%;
   background-position: top left;
+  background-position-y: 40%;
   background-repeat: no-repeat;
 }
 
@@ -147,9 +155,12 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 700px) {
-    #photos img{
+@media screen and (max-width: 900px) {
+    .photos img{
         height: 60vh;
-        column-count:1;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact-page {
+        background-position-y: 50%;
     }
 }
