@@ -7,10 +7,6 @@ ul {
   padding: 20px 0 20px 0;
 }
 
-.menu {
-  display: inline-block;
-}
-
 .menu-item {
   display: inline-block;
   font-size: 20px;
@@ -32,15 +28,8 @@ ul {
 /* -----------------------------------content-elements -------------------------*/
 
 .frontpage-video {
-    width: 100%;
-    height: 100%;
-}
-
-.frontpage-video-container {
-    color: #fff;
-    position: left;
-    width: 420px;
-    height: 315px;
+    width: 640px;
+    height: 480px;
 }
 
 .photos {
@@ -64,6 +53,8 @@ footer {
   background: #000000;
   color: #fff;
   height: 20vh;
+  width: 100%;
+  position: absolute bottom;
 }
 
 #footer-image {
@@ -136,10 +127,16 @@ a:visited {
 
 @media screen and (max-width: 900px) {
   .menu-item {
-    display: none;
+    display: inline-block;
+  }
+  .menu-item i {
+      display: none;
   }
   .menu-brand {
-      margin-left: 10px
+      margin-left: 10px;
+  }
+  .menu {
+      padding: 0;
   }
   .background-image {
     background-size: cover;
@@ -147,13 +144,19 @@ a:visited {
   .contact-page {
       background-position-y: 20%; 
   }
+  .frontpage-video {
+    width: 80%;
+    height: 50vh;
+}
+.video-frame, ::after, ::before {
+    box-sizing: border-box;
+    text-align: center;
 }
 
-@media screen and (min-width: 900px) {
-  .menu-mobile {
-    display: none;
-  }
 }
+}
+
+
 
 @media screen and (max-width: 900px) {
     .photos img{
