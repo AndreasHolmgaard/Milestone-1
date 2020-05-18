@@ -72,7 +72,15 @@ ul {
   margin: 6px;
 }
 /* -----------------------------------content-elements -------------------------*/
-
+.video-frame,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    top: 90px;
+    left: 90px;
+  }
 .frontpage-video {
   width: 640px;
   height: 480px;
@@ -86,18 +94,32 @@ ul {
   background-color: black;
 }
 
+.photos div {
+    display: inline-block;
+    width: 300px;
+   margin: 10px 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.photos div :after, :before {
+    box-sizing: none;
+}
+
 input[type=checkbox] {
   display: none;
 }
 
 .photos img {
-  margin: 100px;
   transition: transform 0.25s ease;
   cursor: zoom-in;
   width: 300px;
   height: 400px;
   object-fit: cover;
-  display: inline-block;
+}
+
+.photos img :after, :before {
+    box-sizing: none;
 }
 
 input[type=checkbox]:checked ~ label > img {
@@ -201,12 +223,16 @@ footer {
   .menu-item i {
     display: none;
   }
-  .menu-brand {
-    margin-left: 10px;
-  }
+  
   .menu {
     padding: 0;
     margin-bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: left;
+  }
+  .menu span {
+      margin: 0;
   }
   .background-image {
     background-size: contain;
@@ -225,6 +251,7 @@ footer {
     text-align: center;
     position: relative;
     top: 90px;
+    left: 0;
   }
 
   ul {
@@ -240,7 +267,9 @@ footer {
   }
   .photos img {
   margin: 0 auto;
-  height: 80vh;
+}
+.photos div {
+    width: 90vw;
 }
 }
 
