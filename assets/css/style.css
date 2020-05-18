@@ -39,7 +39,7 @@ a:visited {
 }
 
 footer {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /*----------------------- navbar ---------------------- */
@@ -50,7 +50,7 @@ ul {
 }
 
 .menu {
-    position: fixed;
+  position: fixed;
 }
 
 .menu-item {
@@ -71,16 +71,21 @@ ul {
 .menu span {
   margin: 6px;
 }
+
+.active-page {
+    font-weight: bold;
+}
 /* -----------------------------------content-elements -------------------------*/
 .video-frame,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-    text-align: left;
-    position: relative;
-    top: 90px;
-    left: 90px;
-  }
+::after,
+::before {
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+  top: 90px;
+  left: 90px;
+}
+
 .frontpage-video {
   width: 640px;
   height: 480px;
@@ -95,18 +100,19 @@ ul {
 }
 
 .photos div {
-    display: inline-block;
-    width: 300px;
-   margin: 10px 5px;
-   padding-left: 10px;
-   padding-right: 10px;
+  display: inline-block;
+  width: 300px;
+  margin: 10px 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.photos div :after, :before {
-    box-sizing: none;
+.photos div :after,
+:before {
+  box-sizing: none;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -118,16 +124,15 @@ input[type=checkbox] {
   object-fit: cover;
 }
 
-.photos img :after, :before {
-    box-sizing: none;
+.photos img :after,
+:before {
+  box-sizing: none;
 }
 
-input[type=checkbox]:checked ~ label > img {
+input[type="checkbox"]:checked ~ label > img {
   transform: scale(2);
   cursor: zoom-out;
 }
-
-
 
 /* -----------------------------Contact form ------------------------- */
 .contact-form {
@@ -167,8 +172,8 @@ footer {
   color: #fff;
   height: 90px;
   width: 100%;
-  position: fixed; 
-  bottom:0;
+  position: fixed;
+  bottom: 0;
 }
 
 #footer-image {
@@ -180,10 +185,16 @@ footer {
   margin: 0 0 90px;
 }
 
+.social-media {
+ display: block;
+ padding: 0;
+}
+
 .social-media li {
   display: inline-block;
   font-size: 30px;
   padding: 0 25px;
+  margin: 0 auto;
 }
 
 /* --------------------------------Backgrounds------------------------------------- */
@@ -223,16 +234,13 @@ footer {
   .menu-item i {
     display: none;
   }
-  
   .menu {
     padding: 0;
-    margin-bottom: 40px;
-    left: 0;
-    right: 0;
+    margin: 0 0 40px 0;
     text-align: left;
   }
   .menu span {
-      margin: 0;
+    margin: 0;
   }
   .background-image {
     background-size: contain;
@@ -241,12 +249,12 @@ footer {
     background-position-y: 20%;
   }
   .frontpage-video {
-    width: 80%;
+    width: 80vw;
     height: 50vh;
   }
   .video-frame,
-  ::after,
-  ::before {
+  :after,
+  :before {
     box-sizing: border-box;
     text-align: center;
     position: relative;
@@ -263,17 +271,19 @@ footer {
     background-position-y: 50%;
   }
   footer {
-      padding: 0;
+    padding: 0;
+    max-width: 100%;
   }
   .photos img {
-  margin: 0 auto;
-}
-.photos div {
+    margin: 0 auto;
+  }
+  .photos div {
     width: 90vw;
-}
+    padding: 0;
+  }
 }
 
-@media screen and (orientation:portrait) and (max-width:900px) {
+@media screen and (orientation: portrait) and (max-width: 900px) {
   .frontpage {
     background-position-y: 100px;
   }
