@@ -241,7 +241,7 @@ footer {
   background: black url(../images/headphonelasse.jpg);
   height: 100vh;
   max-width: 100%;
-  background-position: top left;
+  background-position: top;
   background-position-y: 40%;
   background-repeat: no-repeat;
 }
@@ -276,9 +276,6 @@ footer {
   }
   .background-image {
     background-size: contain;
-  }
-  .contact-page {
-    background-position-y: 20%;
   }
   .frontpage-video {
     width: 80vw;
@@ -333,6 +330,18 @@ footer {
     background-position-y: 100px;
   }
   .video-frame {
-      top: 125px;
+    top: 125px;
   }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  .contact-form {
+    padding: 30vh 0 30vh 0;
+}
+.contact-page {
+    height: auto;
+}
+.aboutpage {
+    height: auto;
+}
 }
