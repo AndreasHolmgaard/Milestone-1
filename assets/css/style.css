@@ -30,13 +30,18 @@ a:visited {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* -------------------------------------Text------------------------ */
+/* -------------------------------------Text/margins/paddings------------------------ */
 .uppercase {
   text-transform: uppercase;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+html{
+  position:relative; 
+  min-height: 100%;
 }
 
 /*----------------------- navbar ---------------------- */
@@ -237,6 +242,16 @@ footer {
   position: absolute;
 }
 
+.aboutpage {
+  background: black url(../images/photos/Sofalasse.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  filter:blur(8px);
+}
+
 .contact-page {
   background: black url(../images/headphonelasse.jpg);
   height: 100vh;
@@ -342,6 +357,12 @@ footer {
     height: auto;
 }
 .aboutpage {
-    height: auto;
+    height: 100%;
 }
+.menu {
+    position: absolute;
+}
+footer {
+    position: absolute;
+    bottom: 0;
 }
