@@ -38,6 +38,7 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 Features Left to Implement
+Dropdown menu from burger icon on smaller devices.
 Another feature idea
 Technologies Used
 HTML 5. Basic framework for website creation. https://en.wikipedia.org/wiki/HTML5
