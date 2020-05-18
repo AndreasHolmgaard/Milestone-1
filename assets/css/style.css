@@ -100,7 +100,7 @@ ul {
     height: 550px;
     color: #fff;
     font-size: 25px;
-    top: 100px;
+    margin-top: 100px;
     padding-left: 100px;
     text-align: left;
     background: rgba(0, 0, 0, 0.25)
@@ -328,8 +328,8 @@ footer {
   }
   .about-section {
       width: 90vw;
-      height: fit-content;
-      margin: 0 auto;
+      height: 90vh;
+      margin: 100px auto 400px;
       padding-left: 0;
   }
   .form-control {
@@ -359,6 +359,10 @@ footer {
 .aboutpage {
     height: 100%;
 }
+.about-section{
+    font-size: 1.5rem;
+    margin: 100px auto 250px;
+    }
 .menu {
     position: absolute;
 }
