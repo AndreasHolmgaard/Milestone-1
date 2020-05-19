@@ -75,16 +75,17 @@ ul {
 }
 
 .active-page {
-    font-weight: bold;
+    text-decoration: underline;
 }
+
 /* -----------------------------------content-elements -------------------------*/
 .video-frame {
   box-sizing: border-box;
   text-align: left;
   position: relative;
-  top: 90px;
-  left: 90px;
+  margin: 90px auto;
   color: #fff;
+  overflow: auto;
 }
 
 .frontpage-video {
@@ -96,14 +97,28 @@ ul {
 .about-section {
     display: block;
     position: relative;
-    width: 50vw;
+    width: 100vw;
     height: calc(100% - 50px);
-    overflow: auto;
     color: #fff;
-    font-size: 2rem;
-    margin: 150px 200px;
-    text-align: left;
+    margin: 79.86px auto;
     background: rgba(0, 0, 0, 0.25)
+}
+
+.about-section div {
+    overflow: auto;
+    font-size: 2rem;
+    text-align: left;
+    width: 600px;
+    height: calc(100% - 70px);
+    margin: 0 auto;
+    font-family: "roboto", sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.3px;
+}
+
+.about-section h3
+{
+    text-align: center;
 }
 
 /* -------------------------photo Gallery ----------------------- */
@@ -128,7 +143,7 @@ ul {
   box-sizing: none;
 }
 
-input[type="checkbox"] {
+.photos div input[type="checkbox"] {
   display: none;
 }
 
@@ -300,7 +315,7 @@ footer {
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    top: 90px;
+    margin-top: 90px;
     left: 0;
   }
 
@@ -327,10 +342,14 @@ footer {
     padding: 0;
   }
   .about-section {
-      width: 90vw;
+      width: 100vw;
       height: calc(100%-164.250px);
       margin: 74.250px auto 90px;
       padding-left: 0;
+  }
+  .about-section div {
+      width: 80vw;
+      font-size: 1.5rem;
   }
   .menu-about {
       background-color: #000;
@@ -349,11 +368,14 @@ footer {
     background-position-y: 100px;
   }
   .video-frame {
-    top: 125px;
+    margin-top: 125px;
   }
 }
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
+    .video-frame {
+        height: height: calc(100% - 164.250px);;
+    }
   .contact-form {
     padding: 30vh 0 30vh 0;
 }
