@@ -75,17 +75,17 @@ ul {
 }
 
 .active-page {
-    filter: blur(8px);
+    filter: blur(1px);
 }
 
 /* -----------------------------------content-elements -------------------------*/
 .video-frame {
-  box-sizing: border-box;
+  display: block;
   text-align: left;
   position: relative;
-  margin: 90px auto;
+  margin: 90px 15vw 0;
   color: #fff;
-  overflow: auto;
+  background: transparent;
 }
 
 .frontpage-video {
@@ -296,23 +296,10 @@ footer {
   .background-image {
     background-size: contain;
   }
-  .frontpage-video {
-    width: 80vw;
-    height: 50vh;
-  }
-  .video-frame {
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
-    margin-top: 90px;
-    left: 0;
-  }
-
   ul {
     margin-bottom: 0;
     padding-top: 5px;
   }
-
   .contact-page {
     background-position-y: 50%;
   }
@@ -338,6 +325,7 @@ footer {
   .about-section div {
       width: 80vw;
       font-size: 1.5rem;
+      font-weight: 400;
   }
   .menu-about {
       background-color: #000;
@@ -356,22 +344,34 @@ footer {
     background-position-y: 100px;
   }
   .video-frame {
-    margin-top: 125px;
+    margin: 125px 15px 0 15px;
   }
+  .frontpage-video {
+  width: 90vw;
+  height: 250px;
+}
 }
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
-    .video-frame {
-        height: calc(100% - 164.250px);
-    }
+.video-frame {
+    height: calc(100% - 164.250px);
+    overflow: scroll;
+    margin: 90px 30px 90px 30px;
+    text-align: center;
+}
+.video-frame div{
+ overflow: scroll;
+ padding-bottom: 20px;
+}
+.frontpage-video {
+  width: 350px;
+  height: 220px;
+}
   .contact-form {
     padding: 30vh 0 30vh 0;
 }
 .contact-page {
     height: auto;
-}
-.aboutpage {
-    height: 100%;
 }
 .about-section{
     font-size: 1.5rem;
