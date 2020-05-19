@@ -28,6 +28,7 @@ In this section, you should go over the different parts of your project, and des
 Features Left to Implement
 Dropdown menu from burger icon on smaller devices.
 Form server destination right now it's just for looks.
+Links to an official facebook, twitter, you and instagram site for Lasse. They need to be made first.
 
 ## Technologies Used
 HTML 5. Basic framework for website creation. https://en.wikipedia.org/wiki/HTML5
@@ -40,12 +41,20 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 JQuery
 The project uses JQuery to simplify DOM manipulation.
-Testing
+
+## Testing
+I had Lasse try out the website before the images were interactive with zoom. I also shared my website with others to recieve feedback if anything was dificult to navigate.
+It's easy to read a bit about Lasse and learn about him as a bassist and person through the photos. 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+Using https://validator.w3.org/nu/ I weeded out erros in my code. I kept my comments as they are even though the validator warned about the extra hyphens.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+https://andreasholmgaard.github.io/Milestone-1/
+
+Go to the validator page and paste in the Milestone-1 website url.
+
+I have opened the website on my desktop, and my phone to find out if there are any responsiveness problems.
+The trickiest part was the landscape orientation for the mobile format.
 
 Contact form:
 Go to the "Contact Us" page
@@ -78,5 +87,7 @@ The video is obtained from https://www.youtube.com/watch?v=fAbdz98M2Bc
 
 Acknowledgements
 Thanks to Lasse for being my inspiration to make this site.
+https://css-tricks.com/
+https://www.w3schools.com/
 I received inspiration for this project from https://stackoverflow.com/questions/39858998/zoom-in-and-out-on-mouse-click-with-css
-The Rosie Odenkirk resume page and Code institutes Whiskey drop webpage prjoect. 
+The Rosie Odenkirk resume page and Code institutes Whiskey drop webpage project. 
