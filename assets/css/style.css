@@ -35,10 +35,6 @@ a:visited {
   text-transform: uppercase;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 html{
   position:relative; 
   min-height: 100%;
@@ -345,6 +341,7 @@ footer {
   }
   .video-frame {
     margin: 125px 15px 0 15px;
+    text-align: center;
   }
   .frontpage-video {
   width: 90vw;
@@ -354,9 +351,9 @@ footer {
 
 @media screen and (orientation: landscape) and (max-width: 900px) {
 .video-frame {
-    height: calc(100% - 164.250px);
-    overflow: scroll;
-    margin: 90px 30px 90px 30px;
+    height: 250px;
+    overflow: hidden;
+    margin: 90px 30px 70px 30px;
     text-align: center;
 }
 .video-frame div{
