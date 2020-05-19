@@ -71,7 +71,7 @@ ul {
 }
 
 .active-page {
-    filter: blur(1px);
+    text-decoration: underline;
 }
 
 /* -----------------------------------content-elements -------------------------*/
