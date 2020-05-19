@@ -332,7 +332,6 @@ footer {
   }
   .about-section {
       width: 100vw;
-      height: calc(100%-164.250px);
       margin: 74.250px auto 90px;
       padding-left: 0;
   }
@@ -384,4 +383,5 @@ footer {
 footer {
     position: absolute;
     bottom: 0;
-}
+    }
+    }
