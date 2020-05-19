@@ -1,5 +1,3 @@
-`python3 -m http.server`
-
 # Lasse Munch
 
 This i a website presenting the bassist Lasse Munch. Right now he is not in a band.
@@ -47,45 +45,46 @@ I had Lasse try out the website before the images were interactive with zoom. I 
 It's easy to read a bit about Lasse and learn about him as a bassist and person through the photos. 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-Using https://validator.w3.org/nu/ I weeded out erros in my code. I kept my comments as they are even though the validator warned about the extra hyphens.
+Using the following websites I weeded out erros in my code. I kept my comments as they are even though the html validator warned about the extra hyphens.
+https://validator.w3.org/nu/
+The css validator claims that my code has 32 errors. All 32 recognised errors are in the Bootstrap library.
+https://jigsaw.w3.org/css-validator/
 
 https://andreasholmgaard.github.io/Milestone-1/
 
-Go to the validator page and paste in the Milestone-1 website url.
+Go to the validator pages and paste in the Milestone-1 website url.
 
 I have opened the website on my desktop, and my phone to find out if there are any responsiveness problems.
 The trickiest part was the landscape orientation for the mobile format.
 
+The biggest difference between smaller bigger screens is the fontsize of the navigation menu items. 
+Besides that all content like videos, photos and paragraphs, is taking up most of the screen on the mobile device format.
+The footer and header are fixed in desktop veiw and are absolute in mobile view.
+
 Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
+Tested "contact.html"
+Try to submit the empty form and verify that an error message about the required fields appears :('check')
+Try to submit the form with an invalid email address and verify that a relevant error message appears : ('check')
+Try to submit the form with all inputs valid and verify that a success message appears. : ('check')
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+## Deployment
+I deployed using GitHub Pages with the current branch.
 
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+There are no differences between the development and the deployment at the moment.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+To run the code locally in gitpod type "python3 -m http.server" in the console.
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
-Credits
+## Credits
 Content
 No text paragraphs were copied.
 
-Media
+## Media
 The photos used in this site were obtained from https://www.facebook.com/lasserm
 The video is obtained from https://www.youtube.com/watch?v=fAbdz98M2Bc
 
-Acknowledgements
+## Acknowledgements
 Thanks to Lasse for being my inspiration to make this site.
 https://css-tricks.com/
 https://www.w3schools.com/
